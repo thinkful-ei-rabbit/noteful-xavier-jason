@@ -3,7 +3,7 @@ import {
     BrowserRouter as Router,
     Link,
 } from 'react-router-dom';
-import moment from 'react-moment';
+import Moment from 'react-moment';
 
 const Note = (props) => {
     return ( 
