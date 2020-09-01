@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .wrapper {
   display: flex;
 }
@@ -34,15 +38,20 @@ a h1 {
 }
 
 .side-bar {
-  margin-top: 100px;
   background-color: #0b1b32;
   color: white;
   width: 25%;
-  height: 100vh;
+}
+
+.side-bar button {
+  
+}
+
+.folder-list {
+  margin-top: 100px;
 }
 
 .note-area {
   background-color: #102541;
   color: white;
-  height: 100vh;
 }

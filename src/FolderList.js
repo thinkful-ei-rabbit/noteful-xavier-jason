@@ -12,7 +12,7 @@ const FolderList = (props) => {
                 <ul>
                 {props.folders.map(folder =>
                     <li key={folder.id}>
-                    <Link to={`/Folder/${folder.id}`}>{folder.name}</Link>
+                    <Link to={`/folder/${folder.id}`}>{folder.name}</Link>
                     </li>
                 )}
                 </ul>

@@ -3,7 +3,7 @@ import {
     BrowserRouter as Router,
     Link,
 } from 'react-router-dom';
-import moment from 'react-moment';
+import Moment from 'react-moment';
 
 const Note = (props) => {
     return ( 
@@ -12,9 +12,9 @@ const Note = (props) => {
                 <ul>
                 {props.notes.map(note =>
                     <li className="list-item" key={note.id}>
-                    <Link to={`/Note/${note.id}`}>{note.name}</Link>
-                    <p><Moment format="MM/DD/YY">{note.modified}</Moment></p>
-                    <button></button>
+                    <Link to={`/note/${note.id}`}>{note.name}</Link>
+                    <p>Modified <Moment format="DD MMM YYYY">{note.modified}</Moment></p>
+                    <button className="deleteButton">Delete</button>
                     </li>
                 )}
                 </ul>
