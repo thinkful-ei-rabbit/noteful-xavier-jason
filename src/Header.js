@@ -1,13 +1,9 @@
 import React from 'react'
-import {
-    BrowserRouter as Router,
-    Link,
-} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
     return ( 
-        <Router>
             <div>
                 <header>
                     <Link to="/">
@@ -15,7 +11,6 @@ const Header = () => {
                     </Link>
                 </header>
             </div>
-        </Router>
      );
 }
  
